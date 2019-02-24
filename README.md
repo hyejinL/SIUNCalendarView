@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- Swift 4.2
+- Xcode 10.1
+
 ## Installation
 
 SIUNCalendarView is available through [CocoaPods](https://cocoapods.org). To install

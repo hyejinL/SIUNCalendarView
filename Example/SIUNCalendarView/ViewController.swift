@@ -38,6 +38,13 @@ class ViewController: UIViewController {
     @IBAction func touchUpNextMonthButton(_ sender: Any) {
         calendarView.movePage(addMonth: 1)
     }
+    
+    @IBAction func touchUpSpecificDateButton(_ sender: UIButton) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let date = formatter.date(from: sender.currentTitle ?? "")
+        calendarView.movePage(to: date, shouldSelectedDay: true)
+    }
 }
 
 extension ViewController: CalendarViewDelegate {

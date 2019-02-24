@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'SIUNCalendarView'
-    s.version          = '0.1.0'
+    s.version          = '1.0.0'
     s.summary          = 'Swift CalendarView'
     s.description      = <<-DESC
     Swift CalendarView at Bodabi App
