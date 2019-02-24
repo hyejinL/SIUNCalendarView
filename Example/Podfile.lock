@@ -1,0 +1,16 @@
+PODS:
+  - SIUNCalendarView (0.1.0)
+
+DEPENDENCIES:
+  - SIUNCalendarView (from `../`)
+
+EXTERNAL SOURCES:
+  SIUNCalendarView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SIUNCalendarView: 4a2d6aab6e78bbe5cf40ee9cf0cea30f3ca5e421
+
+PODFILE CHECKSUM: 1b37aaa866d38549ea18e9262c7204bc0e4c9cd3
+
+COCOAPODS: 1.5.3
