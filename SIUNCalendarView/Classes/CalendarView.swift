@@ -117,8 +117,11 @@ public class CalendarView: UIView {
         let visibleDateString = fromDate.toString(of: .noDay)
         let dateToMoveString = toDate.toString(of: .noDay)
         
-        guard let nextPageController = pageViewController(date: toDate,
-                                                          shouldSelectedDay: shouldSelectedDay) else { return }
+        guard let nextPageController = pageViewController(
+            date: toDate,
+            shouldSelectedDay: shouldSelectedDay
+            ) else { return }
+        
         pageController?.setViewControllers(
             [nextPageController],
             direction: direction,
@@ -142,7 +145,7 @@ public class CalendarView: UIView {
 // MARK: - UIPageViewControllerDelegate
 
 extension CalendarView: UIPageViewControllerDelegate {
-    private func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if let viewController = previousViewControllers
             .first as? CalendarMonthViewController {
             viewController.isVisible = false

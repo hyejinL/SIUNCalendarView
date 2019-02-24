@@ -52,6 +52,7 @@ extension ViewController: CalendarViewDelegate {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM"
         monthLabel.text = formatter.string(from: date)
+        print(date)
     }
     
     func calendar(_ calendar: CalendarView, didSelectedItem date: Date) {
